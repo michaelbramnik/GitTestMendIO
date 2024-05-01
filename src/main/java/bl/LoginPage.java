@@ -15,10 +15,12 @@ public class LoginPage {
     }
 
     public void openLoginForm() {
+        // Click sign-in button to navigate to user credentials form
         Locator signInButton = page.locator(".HeaderMenu-link--sign-in");
         assertThat(signInButton).isVisible();
         signInButton.click();
 
+        // Make sure the form is visible to continue
         loginForm = page.locator(".auth-form-body");
         assertThat(loginForm).isVisible();
     };

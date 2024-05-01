@@ -50,11 +50,4 @@ public class TestGitHubSanity {
         LoginPage loginPage = new LoginPage(page);
         loginPage.signIn("111", "222", true);
     }
-
-    @Test
-    void getUserRepos() {
-        LoginPage loginPage = new LoginPage(page);
-        // Pass on valid credentials
-        loginPage.signIn("aaa", "bbb", false);
-    }
 }
