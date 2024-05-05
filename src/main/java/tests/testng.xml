@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Sanity parallel"  parallel = "methods" thread-count="2">
+    <test name = "Sanity Tests">
+        <classes>
+            <class name = "tests.TestGitHubSanity" />
+        </classes>
+    </test>
+</suite>
